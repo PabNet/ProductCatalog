@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.sidebar {
+    width: 15%;
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+    .menu li {
+        margin-bottom: 10px;
+    }
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    margin-left: 20%;
+    position: relative;
+}
+
+.above-table {
+    background: #333;
+    padding: 10px;
+    position: absolute;
+    width: calc(100% - 17%);
+    margin-left: 15.4%;
+}
+
+.table {
+    margin-top: 50px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+
+
+.action-icons a {
+    text-decoration: none;
+}
+
+    .action-icons a.delete {
+        color: #ff0000;
+    }
+
+.add-button {
+    color: #333; 
+    text-decoration: none; 
+}
+
+    .add-button:hover {
+        color: #666;
+    }
+
+
+.sidebar a {
+    color: #fff; 
+    text-decoration: none;
+    transition: color 0.3s; 
+}
+
+    .sidebar a:hover {
+        color: #ccc; 
+    }
+
+.exit-button {
+    background-color: #d9534f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 200%;
+}
+
+    .exit-button:hover {
+        background-color: #c9302c;
+    }
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-controls {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.price-filter,
+#dropdown-list,
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#price-filter {
+    margin-left: 15px;
+}
+
+#apply-filter {
+    margin-top: 33px;
+}
+
+.label-input {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#search-container {
+    margin-top: 39px;
+    margin-left: 15px;
+}
+
+#price-symbol {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+

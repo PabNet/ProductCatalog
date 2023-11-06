@@ -1,0 +1,53 @@
+﻿@{
+    Layout = "~/Views/Shared/_TableLayout.cshtml";
+
+    ViewData["Title"] = "Users";
+}
+
+@using ProductCatalog.Domain.Models.Authentication
+@model List<ProductCatalog.Domain.Models.Authentication.User>
+
+<h1>
+    Users
+    @if (ViewData["ShowAddAction"] != null && (bool)ViewData["ShowAddAction"])
+    {
+        <a class="add-button" href="/DataForm/User">&#43;</a>
+    }
+</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Login</th>
+            <th>Password</th>
+            <th>Role</th>
+            <th>Blocked</th>
+            <th colspan="2">Actions</th>
+        </tr>
+    </thead>
+    @if (Model != null)
+    {
+        <tbody>
+            @foreach (var user in Model)
+            {
+                <tr>
+                    <td>@user.Login</td>
+                    <td>@user.Password</td>
+                    <td>@user.Role.Name</td>
+                    <td>@(user.IsLocked ? "Yes" : "No")</td>
+                    @if (ViewData["ShowUpdateAction"] != null && (bool)ViewData["ShowUpdateAction"])
+                    {
+                        <td class="action-icons">
+                            <a href="/DataForm/User/@user.Id">✏️</a>
+                        </td>
+                    }
+                    @if (ViewData["ShowDeleteAction"] != null && (bool)ViewData["ShowDeleteAction"])
+                    {
+                        <td class="action-icons">
+                            <a href="/DataTable/RemoveUser/@user.Id" class="delete">❌</a>
+                        </td>
+                    }
+                </tr>
+            }
+        </tbody>
+    }
+</table>

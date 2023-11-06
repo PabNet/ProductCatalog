@@ -1,0 +1,50 @@
+﻿@{
+    Layout = "~/Views/Shared/_TableLayout.cshtml";
+
+    ViewData["Title"] = "Categories";
+}
+
+@using ProductCatalog.Domain.Models.Core
+@model List<ProductCatalog.Domain.Models.Core.ProductCategory>
+
+<h1>
+    Categories
+    @if (ViewData["ShowAddAction"] != null && (bool)ViewData["ShowAddAction"])
+    {
+        <a class="add-button" href="/DataForm/Category">&#43;</a>
+    }
+</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th colspan="2">Actions</th>
+        </tr>
+    </thead>
+    @if (Model != null)
+    {
+        <tbody>
+            @foreach (var category in Model)
+            {
+                <tr>
+                    <td>@category.Name</td>
+                    <td>@category.Description</td>
+                    @if (ViewData["ShowUpdateAction"] != null && (bool)ViewData["ShowUpdateAction"])
+                    {
+                        <td class="action-icons">
+                            <a href="/DataForm/Category/@category.Id">✏️</a>
+                        </td>
+                    }
+                    @if (ViewData["ShowDeleteAction"] != null && (bool)ViewData["ShowDeleteAction"])
+                    {
+                        <td class="action-icons">
+                            <a href="/DataTable/RemoveCategory/@category.Id" class="delete">❌</a>
+                        </td>
+                    }
+                </tr>
+            }
+        </tbody>
+    }
+</table>
+

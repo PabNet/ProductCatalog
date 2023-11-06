@@ -1,0 +1,17 @@
+D:\Developed_Projects\Rider\ProductCatalog\ProductCatalog\ProductCatalog.Services\bin\Debug\net6.0\ProductCatalog.Services.deps.json
+D:\Developed_Projects\Rider\ProductCatalog\ProductCatalog\ProductCatalog.Services\bin\Debug\net6.0\ProductCatalog.Services.dll
+D:\Developed_Projects\Rider\ProductCatalog\ProductCatalog\ProductCatalog.Services\bin\Debug\net6.0\ProductCatalog.Services.pdb
+D:\Developed_Projects\Rider\ProductCatalog\ProductCatalog\ProductCatalog.Services\bin\Debug\net6.0\ProductCatalog.Domain.dll
+D:\Developed_Projects\Rider\ProductCatalog\ProductCatalog\ProductCatalog.Services\bin\Debug\net6.0\ProductCatalog.Utility.dll
+D:\Developed_Projects\Rider\ProductCatalog\ProductCatalog\ProductCatalog.Services\bin\Debug\net6.0\ProductCatalog.Domain.pdb
+D:\Developed_Projects\Rider\ProductCatalog\ProductCatalog\ProductCatalog.Services\bin\Debug\net6.0\ProductCatalog.Utility.pdb
+D:\Developed_Projects\Rider\ProductCatalog\ProductCatalog\ProductCatalog.Services\obj\Debug\net6.0\ProductCatalog.Services.csproj.AssemblyReference.cache
+D:\Developed_Projects\Rider\ProductCatalog\ProductCatalog\ProductCatalog.Services\obj\Debug\net6.0\ProductCatalog.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\Developed_Projects\Rider\ProductCatalog\ProductCatalog\ProductCatalog.Services\obj\Debug\net6.0\ProductCatalog.Services.AssemblyInfoInputs.cache
+D:\Developed_Projects\Rider\ProductCatalog\ProductCatalog\ProductCatalog.Services\obj\Debug\net6.0\ProductCatalog.Services.AssemblyInfo.cs
+D:\Developed_Projects\Rider\ProductCatalog\ProductCatalog\ProductCatalog.Services\obj\Debug\net6.0\ProductCatalog.Services.csproj.CoreCompileInputs.cache
+D:\Developed_Projects\Rider\ProductCatalog\ProductCatalog\ProductCatalog.Services\obj\Debug\net6.0\ProductCatalog.Services.csproj.CopyComplete
+D:\Developed_Projects\Rider\ProductCatalog\ProductCatalog\ProductCatalog.Services\obj\Debug\net6.0\ProductCatalog.Services.dll
+D:\Developed_Projects\Rider\ProductCatalog\ProductCatalog\ProductCatalog.Services\obj\Debug\net6.0\refint\ProductCatalog.Services.dll
+D:\Developed_Projects\Rider\ProductCatalog\ProductCatalog\ProductCatalog.Services\obj\Debug\net6.0\ProductCatalog.Services.pdb
+D:\Developed_Projects\Rider\ProductCatalog\ProductCatalog\ProductCatalog.Services\obj\Debug\net6.0\ref\ProductCatalog.Services.dll

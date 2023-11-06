@@ -1,0 +1,36 @@
+﻿@{
+    Layout = "~/Views/Shared/_TableLayout.cshtml";
+
+    ViewData["Title"] = "Category products";
+}
+
+@using ProductCatalog.Domain.Models.Core
+@model ProductCatalog.Domain.Models.Core.ProductCategory
+
+<h1>
+    @Model.Name products
+</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    @if (Model.Products != null)
+    {
+        <tbody>
+            @foreach (var product in Model.Products)
+            {
+                <tr>
+                    <td>@product.Name</td>
+                    <td>@product.Description</td>
+                    <td>@product.Price</td>
+                </tr>
+            }
+        </tbody>
+    }
+</table>
+
+

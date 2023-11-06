@@ -1,0 +1,12 @@
+D:\Developed_Projects\Rider\ProductCatalog\ProductCatalog\ProductCatalog.Utility\bin\Debug\net6.0\ProductCatalog.Utility.deps.json
+D:\Developed_Projects\Rider\ProductCatalog\ProductCatalog\ProductCatalog.Utility\bin\Debug\net6.0\ProductCatalog.Utility.dll
+D:\Developed_Projects\Rider\ProductCatalog\ProductCatalog\ProductCatalog.Utility\bin\Debug\net6.0\ProductCatalog.Utility.pdb
+D:\Developed_Projects\Rider\ProductCatalog\ProductCatalog\ProductCatalog.Utility\obj\Debug\net6.0\ProductCatalog.Utility.csproj.AssemblyReference.cache
+D:\Developed_Projects\Rider\ProductCatalog\ProductCatalog\ProductCatalog.Utility\obj\Debug\net6.0\ProductCatalog.Utility.GeneratedMSBuildEditorConfig.editorconfig
+D:\Developed_Projects\Rider\ProductCatalog\ProductCatalog\ProductCatalog.Utility\obj\Debug\net6.0\ProductCatalog.Utility.AssemblyInfoInputs.cache
+D:\Developed_Projects\Rider\ProductCatalog\ProductCatalog\ProductCatalog.Utility\obj\Debug\net6.0\ProductCatalog.Utility.AssemblyInfo.cs
+D:\Developed_Projects\Rider\ProductCatalog\ProductCatalog\ProductCatalog.Utility\obj\Debug\net6.0\ProductCatalog.Utility.csproj.CoreCompileInputs.cache
+D:\Developed_Projects\Rider\ProductCatalog\ProductCatalog\ProductCatalog.Utility\obj\Debug\net6.0\ProductCatalog.Utility.dll
+D:\Developed_Projects\Rider\ProductCatalog\ProductCatalog\ProductCatalog.Utility\obj\Debug\net6.0\refint\ProductCatalog.Utility.dll
+D:\Developed_Projects\Rider\ProductCatalog\ProductCatalog\ProductCatalog.Utility\obj\Debug\net6.0\ProductCatalog.Utility.pdb
+D:\Developed_Projects\Rider\ProductCatalog\ProductCatalog\ProductCatalog.Utility\obj\Debug\net6.0\ref\ProductCatalog.Utility.dll

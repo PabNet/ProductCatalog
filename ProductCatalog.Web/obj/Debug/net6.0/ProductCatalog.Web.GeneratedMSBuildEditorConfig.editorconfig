@@ -1,0 +1,80 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ProductCatalog.Web
+build_property.RootNamespace = ProductCatalog.Web
+build_property.ProjectDir = D:\Developed_Projects\Rider\ProductCatalog\ProductCatalog\ProductCatalog.Web\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Developed_Projects\Rider\ProductCatalog\ProductCatalog\ProductCatalog.Web
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Developed_Projects/Rider/ProductCatalog/ProductCatalog/ProductCatalog.Web/Views/Authentication/Authorization.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aGVudGljYXRpb25cQXV0aG9yaXphdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Developed_Projects/Rider/ProductCatalog/ProductCatalog/ProductCatalog.Web/Views/Authentication/Registration.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aGVudGljYXRpb25cUmVnaXN0cmF0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Developed_Projects/Rider/ProductCatalog/ProductCatalog/ProductCatalog.Web/Views/DataForm/Category.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0YUZvcm1cQ2F0ZWdvcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Developed_Projects/Rider/ProductCatalog/ProductCatalog/ProductCatalog.Web/Views/DataForm/Product.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0YUZvcm1cUHJvZHVjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Developed_Projects/Rider/ProductCatalog/ProductCatalog/ProductCatalog.Web/Views/DataForm/User.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0YUZvcm1cVXNlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Developed_Projects/Rider/ProductCatalog/ProductCatalog/ProductCatalog.Web/Views/DataTable/Categories.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0YVRhYmxlXENhdGVnb3JpZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Developed_Projects/Rider/ProductCatalog/ProductCatalog/ProductCatalog.Web/Views/DataTable/CategoryProducts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0YVRhYmxlXENhdGVnb3J5UHJvZHVjdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Developed_Projects/Rider/ProductCatalog/ProductCatalog/ProductCatalog.Web/Views/DataTable/Main.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0YVRhYmxlXE1haW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Developed_Projects/Rider/ProductCatalog/ProductCatalog/ProductCatalog.Web/Views/DataTable/Users.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0YVRhYmxlXFVzZXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Developed_Projects/Rider/ProductCatalog/ProductCatalog/ProductCatalog.Web/Views/Home/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFcnJvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Developed_Projects/Rider/ProductCatalog/ProductCatalog/ProductCatalog.Web/Views/Shared/_TableLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9UYWJsZUxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Developed_Projects/Rider/ProductCatalog/ProductCatalog/ProductCatalog.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Developed_Projects/Rider/ProductCatalog/ProductCatalog/ProductCatalog.Web/Views/Templates/AuthenticationTemplateForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVtcGxhdGVzXEF1dGhlbnRpY2F0aW9uVGVtcGxhdGVGb3JtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Developed_Projects/Rider/ProductCatalog/ProductCatalog/ProductCatalog.Web/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Developed_Projects/Rider/ProductCatalog/ProductCatalog/ProductCatalog.Web/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Developed_Projects/Rider/ProductCatalog/ProductCatalog/ProductCatalog.Web/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-uwmdvd2fs7

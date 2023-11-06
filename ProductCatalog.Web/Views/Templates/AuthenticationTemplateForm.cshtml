@@ -1,0 +1,18 @@
+﻿<link rel="stylesheet" href="~/css/form.css">
+
+<div class="container">
+    <h2>@ViewData["Title"]</h2>
+    <form action="@ViewData["FormAction"]" method="post">
+        <div class="form-group">
+            <label for="login">Login</label>
+            <input type="text" id="login" name="Login" required autocomplete="off" autofocus>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="Password" required>
+        </div>
+        <button type="submit" class="btn-action">@ViewData["ButtonLabel"]</button>
+        <div class="error-label">@ViewData["ErrorMessage"]</div>
+    </form>
+    <p class="register-link">@Html.Raw(ViewData["TransferLinkText"])</p>
+</div>

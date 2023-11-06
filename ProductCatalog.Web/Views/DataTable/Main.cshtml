@@ -1,0 +1,110 @@
+﻿@{
+    Layout = "~/Views/Shared/_TableLayout.cshtml";
+
+    ViewData["Title"] = "Main";
+}
+
+@using ProductCatalog.Domain.Models.Core
+@model List<ProductCatalog.Domain.Models.Core.Product>
+
+<h1>
+    Products
+    @if (ViewData["ShowAddAction"] != null && (bool)ViewData["ShowAddAction"])
+    {
+        <a class="add-button" href="/DataForm/Product">&#43;</a>
+    }
+</h1>
+<div class="header-controls">
+    @if (ViewData["Currencies"] != null)
+    {
+        <div class="input-group">
+        <label for="dropdown-list" class="label-input">Choose a currency to convert</label>
+            <select id="dropdown-list">
+                @foreach (var item in ViewData["Currencies"] as List<Tuple<string, string>>)
+                {
+                    if(item.Item2 == ViewData["DefaultCurrencyToConvert"] as string)
+                    {
+                        <option value="@item.Item2" selected>@item.Item1</option>
+                    }
+                    else
+                    {
+                        <option value="@item.Item2">@item.Item1</option>
+                    }
+                }
+            </select>
+        </div>
+    }
+    <form action="/DataTable/FilterProducts" method="get" class="price-filter" id="price-filter">
+        <div class="input-group">
+            <label for="minPrice" class="label-input">Min Price</label>
+            <input type="text" id="minPrice" name="MinPrice" pattern="^\d+([.,]\d{1,2})?$" value="@((@ViewData["MinPriceFilter"] ?? 0).ToString())">
+        </div>
+
+        <div class="input-group">
+            <label for="maxPrice" class="label-input">Max Price</label>
+            <input type="text" id="maxPrice" name="MaxPrice" pattern="^\d+([.,]\d{1,2})?$" value="@((@ViewData["MaxPriceFilter"] ?? 0).ToString())">
+        </div>
+
+        <button type="submit" id="apply-filter">Apply</button>
+    </form>
+    <div class="input-group" id="search-container">
+        <form action="/DataTable/FindProducts" method="get" class="search-form">
+            <input type="text" id="search-input" placeholder="Search..." name="searchText" value="@ViewData["SearchText"]">
+            <button type="submit" id="search-button">🔍</button>
+        </form>
+    </div>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>GeneralNote</th>
+            @if (ViewData["ShowSpecialNoteColumn"] != null && (bool)ViewData["ShowSpecialNoteColumn"])
+            {
+                <th>Special Note</th>
+            }
+            <th colspan="2">Actions</th>
+        </tr>
+    </thead>
+    @if (Model != null)
+    {
+        <tbody>
+            @foreach (var product in Model)
+            {
+                <tr>
+                    <td>@product.Name</td>
+                    @if (ViewData["IsCellLink"] != null && (bool)ViewData["IsCellLink"])
+                    {
+                        <td><a href="/DataTable/CategoryProducts/@product.Category.Id">@product.Category.Name</a></td>
+                    }
+                    else
+                    {
+                        <td>@product.Category.Name</td>
+                    }
+                    <td>@product.Description</td>
+                    <td id="price-cell" title="">@product.Price BYN <span id="price-symbol" data-price="@product.Price">*</span></td>
+                    <td>@product.GeneralNote</td>
+                    @if (ViewData["ShowSpecialNoteColumn"] != null && (bool)ViewData["ShowSpecialNoteColumn"])
+                    {
+                        <td>@product.SpecialNote</td>
+                    }
+                    @if (ViewData["ShowUpdateAction"] != null && (bool)ViewData["ShowUpdateAction"])
+                    {
+                        <td class="action-icons">
+                            <a href="/DataForm/Product/@product.Id">✏️</a>
+                        </td>
+                    }
+                    @if (ViewData["ShowDeleteAction"] != null && (bool)ViewData["ShowDeleteAction"])
+                    {
+                        <td class="action-icons">
+                            <a href="/DataTable/RemoveProduct/@product.Id" class="delete">❌</a>
+                        </td>
+                    }
+                </tr>
+            }
+        </tbody>
+    }
+</table>

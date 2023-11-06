@@ -1,0 +1,49 @@
+﻿@{
+    ViewData["Title"] = "User";
+}
+
+@using ProductCatalog.Domain.Models.Authentication
+@model ProductCatalog.Domain.Models.Authentication.User
+
+<link rel="stylesheet" href="~/css/form.css">
+
+<div class="container">
+    <h2>User</h2>
+    <form action="/DataForm/User" method="post">
+        <div class="form-group">
+            <label for="login">Login</label>
+            <input type="text" id="login" name="Login" required autocomplete="off" autofocus value="@Model?.Login">
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="Password" value="@Model?.Password">
+        </div>
+        @if(ViewData["Roles"] != null)
+        {
+            <div class="form-group">
+                <label for="category">Role</label>
+                <select id="role" name="RoleId">
+                    @foreach (var role in ViewData["Roles"] as List<UserRole>)
+                    {
+                        if (Model?.Role.Id == role.Id)
+                        {
+                            <option value="@role.Id" selected>@role.Name</option>
+                        }
+                        else
+                        {
+                            <option value="@role.Id">@role.Name</option>
+                        }
+                    }
+                </select>
+            </div>
+        }
+        <div class="form-group">
+            <label for="block">Block</label>
+            <input type="checkbox" id="block" name="IsLocked" value = "true" @(Model?.IsLocked == true ? "checked" : "")>
+        </div>
+        <button type="submit" class="btn-action">@ViewData["ButtonLabel"]</button>
+        <div class="error-label">@ViewData["ErrorMessage"]</div>
+        <a href="@Url.Action("Users", "DataTable")" class="btn-back">Back</a>
+        <input type="hidden" name="Id" value="@Model?.Id">
+    </form>
+</div>

@@ -1,0 +1,25 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link rel="stylesheet" href="~/css/table.css">
+
+<div class="sidebar">
+    <h3>@ViewData["CurrentUserRole"] Menu</h3>
+    @if (ViewData["MenuItems"] != null)
+    {
+        <ul class="menu">
+            @foreach (var menuItem in ViewData["MenuItems"] as List<Tuple<string, string>>)
+            {
+                <li><a href="@menuItem.Item2">@menuItem.Item1</a></li>
+            }
+        </ul>
+    }
+    <button class="exit-button" onclick="location.href='/DataTable/Exit'">Exit</button>
+</div>
+<div class="above-table"></div>
+<div class="main-content">
+    @RenderBody()
+</div>
+
+
